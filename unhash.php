@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-date_default_timezone_set('America/Buenos_Aires');
+date_default_timezone_set('India/Kolkata');
 
 function multiexplode($delimiters, $string)
 {
@@ -18,7 +18,6 @@ function Capture($str, $starting_word, $ending_word){
 
 $lista = $_GET['lista'];
 $hashh = multiexplode(array(":", "|", ""), $lista)[0];
-
 
 
 $curl = curl_init('https://hashtoolkit.com/decrypt-hash/?hash='.$hashh.'');
